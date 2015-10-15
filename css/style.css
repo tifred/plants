@@ -1,0 +1,25 @@
+@import url(http://weloveiconfonts.com/api/?family=openwebicons|zocial);
+
+/* openwebicons */
+[class*="openwebicons-"]:before {
+  font-family: "OpenWeb Icons", sans-serif;
+  font-size: 90px;
+}
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+  font-size: 30px;
+  transition: font-size 2s;
+}
+
+* {
+  font-family: Lato, sans-serif; font-weight: 400;
+}
+
+.plants-of-month,
+.plants-you-need,
+.event-table {
+  margin-top: 15px;
+}
+
