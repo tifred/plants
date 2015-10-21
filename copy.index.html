@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Plants NEW TITLE</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="js/jquery-2.1.4.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:700,500,400,300,200,100" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- navbar --> 
+        <nav class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Flowers <span class="caret"></caret></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Old Fashioned</a></li>
+                    <li><a href="#">New Fangled</a></li>
+                    <li><a href="#">Spangled</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Shrubs <span class="caret"></caret></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Cobwebbed</a></li>
+                    <li><a href="#">Hedge Mazey</a></li>
+                    <li><a href="#">Striped</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Vines</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+
+  <!-- Using grid system from bootstrap (i.e. container class)
+       Standard media breakpoints: 768, 992, 1200. -->
+
+  <div class="container">
+
+
+    <!-- Header --> 
+
+    <header class="row">
+      <div class="col-sm-12">
+        <h1>Plants Plants Plants</h1>
+      </div>
+    </header>
+
+
+    <!-- Large Picture and Aside --> 
+
+    <section class="row">
+
+
+      <!-- Main Image (Hero) --> 
+
+      <div class="col-sm-8">
+        <figure>
+          <picture>
+            <source media="(min-width: 1200px)"
+                    srcset="images/nursery-large-1x.jpg 1x, images/nursery-large-2x.jpg 2x">
+            <source media="(min-width: 992px)"
+                    srcset="images/nursery-medium-1x.jpg 1x, images/nursery-medium-2x.jpg 2x">
+            <source media="(min-width: 1px)"
+                    srcset="images/nursery-small-1x.jpg 1x, images/nursery-small-2x.jpg 2x">
+            <img src="images/nursery-small-1x.jpg"
+                 class="img-responsive img-rounded"
+                 alt="The Plant Nursery">
+          </picture>
+          <figcaption>The Nursery</figcaption>
+        </figure>
+      </div>
+
+
+      <!-- What's New --> 
+
+      <div class="col-sm-4 hidden-xs">
+        <header>What IS New?</header>
+        <aside>
+          <p>Many many things</p>
+        </aside>
+      </div>
+    </section>
+
+
+    <!-- Row of Buttons --> 
+
+    <section class="row">    
+      <div class="col-sm-2">
+          <button type="button" class="btn btn-primary btn-lg">Find Locations</button>
+      </div>
+      <div class="col-sm-2 col-sm-offset-2 dropdown">
+        <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown">Adopt a Plant
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Lost Lavenders</a></li>
+          <li><a href="#">Hungry Hydrangeas</a></li>
+          <li><a href="#">Lonely Lilies</a></li>
+      </div>
+      <div class="col-sm-2 col-sm-offset-2 dropdown">
+        <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown">Order Online
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Soil</a></li>
+          <li><a href="#">Soil</a></li>
+          <li><a href="#">Soil</a></li>
+        </ul>
+      </div>
+    </section>    
+
+
+    <!-- Three Columns Headers --> 
+
+    <section class="row">
+      <div class="col-sm-4 table-header">
+      <!-- content added by local.js -->
+      </div>
+      <div class="col-sm-4">
+        <h3>Plants of the Month</h3>
+      </div>
+      <div class="col-sm-4">
+        <h3>...and why you need them.</h3>
+      </div>
+    </section>
+
+
+    <!-- Three Columns --> 
+
+    <section class="row">
+
+
+      <!-- Events --> 
+
+      <div class="col-sm-4">
+        <table class="table table-striped table-bordered table-condensed table-hover event-table">
+          <tr>
+            <th>Date</th>
+            <th>Event</th>
+          </tr>
+          <tr>
+            <td>3/4/15</td>
+            <td>Digging</td>
+          </tr>
+          <tr>
+            <td>3/4/15</td>
+            <td>Digging</td>
+          </tr>
+          <tr class="danger">
+            <td>3/4/15</td>
+            <td>Digging</td>
+          </tr>
+          <tr>
+            <td>3/4/15</td>
+            <td>Digging</td>
+          </tr>
+        </table>
+      </div>
+
+
+      <!-- Plant Pictures --> 
+
+      <div class="col-sm-8">
+        <div class="row">
+          <div class="col-sm-6">
+
+            <img class="img-responsive img-rounded plants-of-month"
+                 src="images/rose-720.jpg"
+                 srcset="images/rose-1440.jpg 1440w,
+                         images/rose-1000.jpg 1000w,
+                         images/rose-720.jpg 720w,
+                         images/rose-586.jpg 586w,
+                         images/rose-440.jpg 440w,
+                         images/rose-360.jpg 360w,
+                         images/rose-220.jpg 220w"
+                 sizes="(min-width: 768px) 33.3vw,
+                        100vw"
+                 alt="A Rose">
+          </div>
+          <div class="col-sm-6">
+            <p class="plants-you-need">hi</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <img class="img-responsive img-rounded plants-of-month"
+                 src="images/salvia-black-blue-720.jpg"
+                 srcset="images/salvia-black-blue-1440.jpg 1440w,
+                         images/salvia-black-blue-1000.jpg 1000w,
+                         images/salvia-black-blue-720.jpg 720w,
+                         images/salvia-black-blue-586.jpg 586w,
+                         images/salvia-black-blue-440.jpg 440w,
+                         images/salvia-black-blue-360.jpg 360w,
+                         images/salvia-black-blue-220.jpg 220w"
+                 sizes="(min-width: 768px) 33.3vw,
+                        100vw"
+                 alt="Black and Blue Salvia">
+          </div>
+          <div class="col-sm-6">
+            <p class="plants-you-need"> hi</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <img class="img-responsive img-rounded plants-of-month"
+                 src="images/salvia-patens-720.jpg"
+                 srcset="images/salvia-patens-1440.jpg 1440w,
+                         images/salvia-patens-1000.jpg 1000w,
+                         images/salvia-patens-720.jpg 720w,
+                         images/salvia-patens-586.jpg 586w,
+                         images/salvia-patens-440.jpg 440w,
+                         images/salvia-patens-360.jpg 360w,
+                         images/salvia-patens-220.jpg 220w"
+                 sizes="(min-width: 768px) 33.3vw,
+                        100vw"
+                 alt="Bright Blue Salvia">
+          </div>
+          <div class="col-sm-6">
+            <p class="plants-you-need"> hi</p>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer class="row text-center">
+      <div class="col-xs-3"></div>
+      <div class="col-xs-2">
+        <a href="http://twitter.com" class="zocial-twitter"></a>
+      </div>
+      <div class="col-xs-2">
+        <a href="http://songkick.com" class="zocial-songkick"></a>
+      </div>
+      <div class="col-xs-2">
+        <a href="http://facebook.com" class="zocial-facebook"></a>
+      </div><div class="col-xs-3">
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="js/local.js"></script>
+
+</body>
+</html>
